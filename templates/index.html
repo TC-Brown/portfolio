@@ -10,6 +10,7 @@
 <body>
     <header class="header">
         <h1>Welcome to My Portfolio</h1>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="200" class="logo">
     </header>
     <main>
         <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Profile Picture" width="200">
@@ -55,7 +56,6 @@ Feel free to explore my projects to see my work in action or get in touch to bui
             </section>
         </main>
     <footer>
-        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="200" class="logo">
         <p>Always striving for excellence.</p>
         <p>&copy; 2025 T.C.Brown</p>
     </footer>
