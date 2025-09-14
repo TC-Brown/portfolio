@@ -3,28 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>T.C. Brown | Home</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Welcome to My Portfolio</h1>
     </header>
     <main>
+        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Profile Picture" width="200">
+        <h1>Terrance C. Brown</h1>
+        <h2>Full Stack Developer | AI Engineer</h2>
+        <div class="introduction">
+        <p>Welcome to my portfolio!</p>
+        <p>I build intelligent applications from the ground up.
+As a Full-Stack Developer and AI Engineer, I bridge the gap between powerful back-end logic and seamless user experiences. I don't just write code; I architect and deploy smart, data-driven solutions that solve real-world problems.
+Feel free to explore my projects to see my work in action or get in touch to build something amazing together.</p>
+        </div>
         <section>
-            <h2>About Me</h2>
-            <p>This is a brief introduction about myself.</p>
+            <h2>Skills</h2>
+            <div class="skills">
+            <p>Frontend: HTML, CSS, JavaScript, React</p>
+            <p>Backend: Python, Flask, Django, Node.js</p>
+            <p>Databases: PostgreSQL, MySQL, MongoDB</p>
+            <p>DevOps: Docker, Git, CI/CD</p>
+            <p>AI/ML: TensorFlow, PyTorch, scikit-learn</p>
+            </div>
         </section>
         <section>
-            <h2>Projects</h2>
-            <p>Details about my projects will go here.</p>
+            <h2>Certifications</h2>
+            <div class="certifications">
+            <p>Certified Full-Stack Developer</p>
+            <p>Certified AI Engineer</p>
+            <p>Certified Python Developer</p>
+            <p>Certified JavaScript Developer</p>
+            <p>Certified React Developer</p>
+            <p>Certified SQL Developer</p>
+            <p>Certified CSS Developer</p>
+            <p>Certified HTML Developer</p>
+            <p>Certified DevOps Engineer</p>
+            </div>
         </section>
-        <section>
-            <h2>Contact</h2>
-            <p>You can reach me at myemail@example.com.</p>
-        </section>
-    </main>
+            <section>
+                <p>Connect with me:</p>
+                <div class="social-links">
+                    <a href="https://www.github.com/TC-Brown" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/terrance-c-brown" target="_blank">LinkedIn</a>
+                    <a href="mailto:trrncbrown@gmail.com">Email</a>
+                </div>
+            </section>
+        </main>
     <footer>
-        <p>&copy; 2023 My Portfolio</p>
+        <a href="/">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="200" class="logo">
+        </a>
+        <p>Always striving for excellence.</p>
+        <p>&copy; 2025 T.C.Brown</p>
     </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
