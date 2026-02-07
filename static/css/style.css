@@ -17,6 +17,12 @@ header {
     padding: 0 1.5rem;
     background: transparent;
 }
+main h3 {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 8px #FFD700
+
+}
 .logo-container {
     display: flex;
     justify-content: center;
@@ -70,7 +76,6 @@ img {
     height: 250px;
     border-radius: 25px;
     border: 4px solid #163f6e;
-    box-shadow: 0 2px 12px rgba(22, 63, 110, 0.18);
 }
 h2 {
     font-size: 1.5em;
@@ -136,4 +141,28 @@ p {
     border-radius: 8px;
     background-color: #1e2a38;
     box-shadow: #ffff 0 0 8px, #163f6e 0 0 12px;
+}
+/* Animation Elements */
+.introduction {
+    animation: power-on 1s 2s ease-in-out, glow 1s 3s infinite;
+}
+.skills {
+    animation: power-on 1s 4s ease-in-out forwards;
+}
+.certifications {
+    animation: power-on 1s 5s ease-in-out forwards;
+} 
+/* Keyframes */
+@keyframes power-on { 
+    from { 
+        transform: scale(1);
+        background-color: #1e2a38;
+    }
+    50% { 
+        transform: scale(.98);
+    }
+    to { 
+        transform: scale(1);
+        background-color: #163f6e;
+    }
 }
